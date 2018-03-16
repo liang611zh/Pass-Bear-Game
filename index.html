@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/game.css">
+<script type="text/javascript" src="game.js"></script>
+</head>
+
+<body>
+<div id="container" style="height:100%">
+<div id="started"><button id="start" type="button" onclick="init()">START</button></div>
+
+<div name="gamearea" id="gamearea">
+	<div style="height:10px; width:100%;position:relative;top:10px" id="topbar">
+		<div id="levelbar">
+		</div>
+		<div id="timebar">
+		</div>
+	</div>
+	<div id="myModal" class="modal">
+	  <!-- Modal content -->
+	  <div class="modal-content">
+		<p id="lose">The bear saw you!!</p>
+		<p id="win">Congratulations! You escaped!</p>
+		<p id="timeout">Time out! The bear catched you!</p>
+		<button id="btn" type="button" onclick="tryagarin()">Try Again!</button>
+		<button id="btn1" type="button" onclick="nextlevel()">Next Level!</button>
+	  </div>
+	</div>
+	
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<img src="images/c_0.png" id="human" style="position:relative;z-index:1">
+	<img src="images/sleep.png" id="bear" style="position:relative; left:50%; bottom:50px;">
+	<div style="height:10px; width:100%;position:relative;bottom:0px" id="light"></div>
+</div>
+</div>
+</body>
+</html>
